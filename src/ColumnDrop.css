@@ -1,0 +1,23 @@
+@property --basis {
+    syntax: "<length-percentage>";
+    inherits: true;
+    initial-value: ${sizes.xxsmall};
+}
+
+[data-chisel-column-drop] {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gutter, 0px);
+}
+
+[data-chisel-column-drop] > * {
+    margin: 0;
+    flex-basis: var(--basis, 159px);
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+[data-chisel-column-drop="no-stetched-columns"] > * {
+    flex-grow: 0;
+}
