@@ -1,9 +1,3 @@
-@property --basis {
-    syntax: "<length-percentage>";
-    inherits: true;
-    initial-value: ${sizes.xxsmall};
-}
-
 [data-chisel-column-drop] {
     box-sizing: border-box;
     display: flex;
